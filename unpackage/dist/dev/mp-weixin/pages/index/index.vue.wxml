@@ -1,0 +1,23 @@
+<template name="154b123b">
+  <view class="_view data-v-7d51aaa4 content">
+    <view class="_view data-v-7d51aaa4 uni-list">
+      <swiper class="_swiper data-v-7d51aaa4">
+        <block wx:key="index" key="{{index}}" wx:for="{{stories}}" wx:for-index="index" wx:for-item="item">
+          <swiper-item class="_swiper-item data-v-7d51aaa4">
+            <image src="{{item.images}}" class="_image data-v-7d51aaa4 slide-image" width="355" height="150"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="_view data-v-7d51aaa4 uni-list-cell" hover-class="uni-list-cell-hover" wx:key="index" key="{{index}}" bindtap="handleProxy" data-newsid="{{item.id}}" data-eventid="{{'tFi-0-'+index}}" data-comkey="{{$k}}" wx:for="{{stories}}" wx:for-index="index"
+        wx:for-item="item">
+        <view class="_view data-v-7d51aaa4 uni-media-list">
+          <image class="_image data-v-7d51aaa4 uni-media-list-logo" src="{{item.images}}"></image>
+          <view class="_view data-v-7d51aaa4 uni-media-list-body">
+            <view class="_view data-v-7d51aaa4 uni-media-list-text-top">{{item.title}}</view>
+            <view class="_view data-v-7d51aaa4 uni-media-list-text-bottom uni-ellipsis">{{item.ga_prefix}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
